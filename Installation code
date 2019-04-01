@@ -1,0 +1,32 @@
+How to link an HTML file with PHP file
+
+Create a file named as index.html inside document root then
+Type below code
+
+<html>
+<body>
+<form action=”welcome.php” method=”post”>
+NAME <input type=”text” name=”name”><br>
+ID <input type”text” name=”id”><br>
+<input type=”submit”>
+</form>
+</body>
+</html>
+
+
+
+Now create a file welcome.php  inside document root and type below code 
+
+<html>
+<body>
+NAME IS : <?php echo $_POST[“name”]; ?> <br>
+ID IS : <?php echo $_POST[“id”]; ?> 
+</body>
+</html>
+
+
+Output will be like below
+ 
+
+NAME IS : ARUN
+ID IS : 1000
